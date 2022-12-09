@@ -11,7 +11,6 @@
 
 int main(void)
 {
-int n;
 /* My char code */
 char c;
 c = 'a';
