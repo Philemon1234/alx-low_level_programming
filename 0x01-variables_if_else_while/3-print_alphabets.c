@@ -18,12 +18,12 @@ c = 'a';
 d = 'A';
 while
 (c <= 'z') {
-putcher(c);
+putchar(c);
 c++;
 }
 while
 (d <= 'z') {
-putcher(d);
+putchar(d);
 d++;
 }
 putcher("\n");
