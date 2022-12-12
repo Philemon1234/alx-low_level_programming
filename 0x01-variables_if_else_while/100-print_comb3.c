@@ -7,15 +7,15 @@
 
 int main(void)
 {
-int i;
-int j;
-for (i = 0; i < 9; i++)
+int m;
+int n;
+for (m = 0; m < 9; m++)
 {
-for (j = i + 1; j < 10; j++)
+for (n = m + 1; n < 10; n++)
 {
-putchar(i + '0');
-putchar(j + '0');
-if (i == 8 && j == 9)
+putchar(m + '0');
+putchar(n + '0');
+if (m == 8 && n == 9)
 {
 continue;
 }
