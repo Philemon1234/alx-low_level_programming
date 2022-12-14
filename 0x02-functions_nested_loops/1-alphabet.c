@@ -1,18 +1,25 @@
 #include "main.h"
 
 /**
- * print_alphabet - writes the character c to stdout
+ * print_alphabet_x10 - Prints alphabet 10 times
  *
- * Return: 0
- */
+ * Return: 0 
+ * */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-char x = 'a';
-while (x <= 'z')
-{
-_putchar(x);
-x++;
+	int x = 1;
+	char y = 'a';
+	while (x <= 10)
+	{
+		while (y <= 'z')
+		{
+			_putchar(n);
+			y++;
+		}
+		n =ii 'a';
+		_putchar('\n');
+		x++;
+			}
 }
-_putchar('\n');
-}
+
