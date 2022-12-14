@@ -1,14 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
- */
-void main(void)
-{
+ *  * print_alphabet - writes the character c to stdout
+ *   *
+ *    * Return: 0
+ *     */
 
-char n;
-for (n = 'a; n <= 'z'; n++)
-_putchar(n);
+void print_alphabet(void)
+{
+char x = 'a';
+while (x <= 'z')
+{
+_putchar(x);
+x++;
+}
 _putchar('\n');
-return (0);
 }
