@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * _print_recursion - Prints a string in reverse.
- * @s: The string to be printed.
- * Auth: Philemon
- * File: 1-print_rev_recursion.c
+ * _print_rev_recursion - Prints a string in reverse
+ * @s: Parameter for the string to be reversed
+ * Return: Nothing
  */
 
 void _print_rev_recursion(char *s)
