@@ -1,29 +1,37 @@
 #include "main.h"
 
 /**
- * _strstr - first occurrence of the substring needle in the haystack
- * @haystack: main str to be examined
- * Return: return 0
+ * helperFunction - checks if sqrt of number exists
+ * @num: number
+ * Return: pSqrt of number ot -1 for error.
  */
 
-char *_strstr(char *haystack, char *needle)
+int helperFunction(int num, int pSqrt)
 {
-	char *str1, *str2; /*Declaring Variables*/
-
-	while (*haystack != '\0')
+	if ((pSqrt * pSqrt) == num)
 	{
-		str1 = haystack; /*Values*/
-		str2 = needle; /*Values*/
-
-		/*Star WHILE*/
-		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
-		{
-			haystack++;
-			str2++;
-		}
-		if (*str2 == '\0')
-			return (str1);
-		haystack = str1 + 1;
+		return (pSqrt);
 	}
-	return (0);
+	else
+	{
+		if ((pSqrt * pSqrt) > num)
+			return (-1);
+		else
+			return (helperFunction(num, pSqrt + 1));
+	}
+}
+
+/**
+ *_sqrt_recursion - returns the natural square root of a number.
+ *@n: number to find sqrt of.
+ *Return squareroot of n.
+ *-1 if n does not have a natural sqrt.
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	else
+		return (helperFunction(n, 0));
 }
