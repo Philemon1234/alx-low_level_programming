@@ -8,13 +8,14 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *str1, *str2;
+	char *str1, *str2; /*Declaring Variables*/
 
 	while (*haystack != '\0')
 	{
-		str1 = haystack;
-		str2 = needle;
+		str1 = haystack; /*Values*/
+		str2 = needle; /*Values*/
 
+		/*Star WHILE*/
 		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
 			haystack++;
